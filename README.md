@@ -6,6 +6,9 @@ This project predicts product sales using advertising spend across TV, Radio, an
 
 The project is designed to be internship submission ready, GitHub ready, and suitable for a resume portfolio.
 
+<img width="1534" height="1018" alt="image" src="https://github.com/user-attachments/assets/76a30dc6-420f-4e47-aca6-d6dcc8501091" />
+
+
 ## Dataset Description
 
 Dataset: [Advertising CSV on Kaggle](https://www.kaggle.com/datasets/bumba5341/advertisingcsv)
