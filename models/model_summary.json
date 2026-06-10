@@ -1,0 +1,5 @@
+{
+    "best_model": "Gradient Boosting Regressor",
+    "best_r2_score": 0.9831267080346855,
+    "best_rmse": 0.7297819762218904
+}
