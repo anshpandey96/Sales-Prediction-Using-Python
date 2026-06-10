@@ -1,27 +1,32 @@
-# Sales Prediction using Advertising Data
+# 📊 Sales Prediction using Advertising Data
 
-## Project Overview
+[![Live Demo](https://img.shields.io/badge/LIVE-DEMO-red?style=for-the-badge&logo=streamlit)](https://sales-prediction-using-python.onrender.com)
+[![Status](https://img.shields.io/badge/STATUS-ONLINE-green?style=for-the-badge&logo=python)](https://sales-prediction-using-python.onrender.com)
 
-This project predicts product sales using advertising spend across TV, Radio, and Newspaper channels. It includes a complete machine learning workflow: data loading, cleaning, exploratory data analysis, model comparison, best-model persistence, and an interactive Streamlit dashboard.
+---
 
-The project is designed to be internship submission ready, GitHub ready, and suitable for a resume portfolio.
+## 🚀 Project Overview
+This project predicts product sales using advertising spend across TV, Radio, and Newspaper channels.  
+It includes a complete machine learning workflow: data loading, cleaning, exploratory data analysis, model comparison, best-model persistence, and an interactive Streamlit dashboard.  
 
-<img width="1534" height="1018" alt="image" src="https://github.com/user-attachments/assets/76a30dc6-420f-4e47-aca6-d6dcc8501091" />
+The project is designed to be **internship submission ready**, **GitHub portfolio ready**, and suitable for a **resume showcase**.
 
+<img width="1534" height="1018" alt="Dashboard Screenshot" src="https://github.com/user-attachments/assets/76a30dc6-420f-4e47-aca6-d6dcc8501091" />
 
-## Dataset Description
+---
 
+## 📂 Dataset Description
 Dataset: [Advertising CSV on Kaggle](https://www.kaggle.com/datasets/bumba5341/advertisingcsv)
 
-Columns:
+**Columns:**
+- `TV`: Advertising budget spent on TV  
+- `Radio`: Advertising budget spent on Radio  
+- `Newspaper`: Advertising budget spent on Newspaper  
+- `Sales`: Product sales target variable  
 
-- `TV`: Advertising budget spent on TV
-- `Radio`: Advertising budget spent on Radio
-- `Newspaper`: Advertising budget spent on Newspaper
-- `Sales`: Product sales target variable
+---
 
-## Project Structure
-
+## 📁 Project Structure
 ```text
 Sales_Prediction_Project/
 |
@@ -48,114 +53,83 @@ Sales_Prediction_Project/
 |-- train.py
 |-- requirements.txt
 |-- README.md
-```
 
-## Features
+✨ Features
 
-- Loads and inspects `Advertising.csv`
-- Displays dataset shape, columns, missing values, duplicates, and summary statistics
-- Handles missing values with median imputation
-- Removes duplicate rows
-- Checks numeric consistency and removes invalid negative values
-- Detects outliers using boxplots and the IQR method
-- Creates professional EDA visualizations
-- Trains and compares multiple regression models
-- Evaluates models using R2 Score, MAE, MSE, and RMSE
-- Automatically saves the best model with pickle
-- Provides an interactive Streamlit sales prediction dashboard
+ Loads and inspects Advertising.csv
 
-## Machine Learning Models
+ Displays dataset shape, columns, missing values, duplicates, and summary statistics
 
-The following models are trained and compared:
+Handles missing values with median imputation
 
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-- Gradient Boosting Regressor
+Removes duplicate rows
 
-The best model is selected automatically based on the highest R2 Score and lowest RMSE.
+Detects outliers using boxplots and IQR method
 
-## Installation Guide
+Creates professional EDA visualizations
 
-1. Clone or download this project.
+Trains and compares multiple regression models
 
-2. Open a terminal inside the project folder.
+Evaluates models using R² Score, MAE, MSE, RMSE
 
-3. Create and activate a virtual environment:
+Saves the best model with pickle
 
-```bash
+Provides an interactive Streamlit dashboard
+
+🤖 Machine Learning Mode
+
+
+
+⚙️ Installation Guide
+
+bash
+# 1. Clone project
+git clone <repo-link>
+
+# 2. Create virtual environment
 python -m venv .venv
 .venv\Scripts\activate
-```
 
-4. Install dependencies:
-
-```bash
+# 3. Install dependencies
 pip install -r requirements.txt
-```
 
-5. Train the models:
-
-```bash
+# 4. Train models
 python train.py
-```
 
-6. Launch the Streamlit dashboard:
-
-```bash
+# 5. Run Streamlit dashboard
 streamlit run app.py
-```
 
-## Screenshots
 
-Screenshots and generated plots are saved in the `screenshots/` folder after running:
+📸 Screenshots
+Recommended dashboard screenshots:
 
-```bash
-python train.py
-```
+Dataset Overview
 
-Recommended dashboard screenshots to add before GitHub submission:
+EDA Visualizations
 
-- Dataset Overview
-- EDA Visualizations
-- Model Performance
-- Feature Importance
-- Sales Prediction Tool
+Model Performance
 
-## Results
+Feature Importance
 
-The training script saves:
+Sales Prediction Too
 
-- Best model: `models/best_model.pkl`
-- Model comparison table: `models/model_performance.csv`
-- Feature importance table: `models/feature_importance.csv`
-- Model summary: `models/model_summary.json`
+📊 Results
+Best model: models/best_model.pkl
 
-Typical result: ensemble models such as Random Forest Regressor or Gradient Boosting Regressor usually perform strongly on this dataset because they capture non-linear relationships between advertising channels and sales.
+Model comparison: models/model_performance.csv
 
-## How Prediction Works
+Feature importance: models/feature_importance.csv
 
-The Streamlit dashboard accepts:
+Model summary: models/model_summary.json
 
-- TV Advertising Budget
-- Radio Advertising Budget
-- Newspaper Advertising Budget
+🔮 Future Enhancements
 
-It returns:
+Cross‑validation & hyperparameter tuning
 
-- Predicted Sales
-- Model Used
-- Confidence Information
+Deploy to Streamlit Cloud
 
-## Future Enhancements
+Automated tests for pipeline
 
-- Add cross-validation and hyperparameter tuning
-- Deploy the Streamlit dashboard to Streamlit Community Cloud
-- Add automated tests for the training pipeline
-- Add experiment tracking with MLflow
-- Build a REST API using FastAPI
-- Add model explainability with SHAP
+REST API with FastAPI
 
-## Author
-
-Created as a professional machine learning internship project.
+Model explainability with SHAP
